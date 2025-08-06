@@ -1,0 +1,2 @@
+# autohireclaude
+claudecodegithub
