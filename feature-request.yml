@@ -1,0 +1,63 @@
+name: ✨ Feature Request
+description: Suggest a new feature for AutoHire
+title: "[FEATURE] "
+labels: ["enhancement", "feature-request"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Have an idea for improving AutoHire? We'd love to hear it! Please provide as much detail as possible.
+
+  - type: dropdown
+    id: feature-category
+    attributes:
+      label: Feature Category
+      description: What area does this feature relate to?
+      options:
+        - Agent Intelligence
+        - Job Scraping
+        - Resume Generation
+        - Browser Automation
+        - GitHub Integration
+        - User Interface
+        - Performance
+        - Security
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: feature-description
+    attributes:
+      label: Feature Description
+      description: Describe the feature you'd like to see
+      placeholder: "I would like AutoHire to be able to..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: use-case
+    attributes:
+      label: Use Case
+      description: How would this feature be used? What problem does it solve?
+      placeholder: "This would help users by..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: implementation-ideas
+    attributes:
+      label: Implementation Ideas
+      description: Do you have any ideas about how this could be implemented?
+      placeholder: "This could be implemented by..."
+
+  - type: checkboxes
+    id: feature-checklist
+    attributes:
+      label: Additional Information
+      options:
+        - label: This feature would benefit multiple users
+        - label: I'm willing to help implement this feature
+        - label: This relates to an existing issue or discussion
